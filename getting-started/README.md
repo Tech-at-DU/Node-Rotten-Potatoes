@@ -83,7 +83,7 @@ Each `h1` header creates a "Mark Complete" button for content between it and nex
 ```
 [This](https://github.com/MakeSchool-Tutorials/Tutorial-Template) 
 ``` 
-creates a link. Relative links should only be used when [linking to assets in the repository](assets/ms-logo.png).
+[This ^^^](https://github.com/MakeSchool-Tutorials/Tutorial-Template) creates a link. Relative links should only be used when [linking to assets in the repository](assets/ms-logo.png).
 
 _Relative links to files in the same works on makeschool.com but the links will not do anything when clicked from ms-markdown-preview._
 
