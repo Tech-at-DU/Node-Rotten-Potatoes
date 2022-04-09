@@ -133,7 +133,9 @@ The following syntax will display a linked image of a youtube video:
 ### MP4/MOV
 
 The following syntax will embed an MP4/MOV video with controls. Videos can be referenced with URLs or relative links if they are included in the repository. This works great with short screencasts made with QuickTime.
-
+```
+![VIDEO](assets/short-video.mov)
+```
 ![VIDEO](assets/short-video.mov)
 
 ### PDF
