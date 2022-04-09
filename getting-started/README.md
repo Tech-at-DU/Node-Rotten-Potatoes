@@ -124,6 +124,9 @@ The renderer has overhauled the image syntax for embedding MP4 videos, YouTube v
 ### YouTube
 
 The following syntax will display a linked image of a youtube video:
+```
+[![WATCH THE VIDEO](http://img.youtube.com/vi/6rT00QXqZak/0.jpg)](https://www.youtube.com/watch?v=6rT00QXqZak)
+```
 
 [![WATCH THE VIDEO](http://img.youtube.com/vi/6rT00QXqZak/0.jpg)](https://www.youtube.com/watch?v=6rT00QXqZak)
 
