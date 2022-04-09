@@ -1,5 +1,5 @@
 ---
-title: "Edit Route: Editing and Updating a Resource"
+# Edit Route: Editing and Updating a Resource
 ---
 
 Now we're checking off the seven **Resourceful Routes**. But we're not done until all of them are complete.
