@@ -75,7 +75,7 @@ Notice you used the same class names and markup used in the Reviews Form. This f
     <hr>
 
     <!-- Comment form -->
-    {{> comment-form}}
+    {{comment-form}}
 
   </div>
 </div>
