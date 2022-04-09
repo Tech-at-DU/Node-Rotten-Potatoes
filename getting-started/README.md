@@ -39,7 +39,8 @@ The folders should be named with the format `P[page-number]-Page-Slug` where:
 
 ### content.md / README.md
 
-Each page's content is defined using `Markdown` in README.MD. content.md is no longer used. 
+Each page's content is defined using `Markdown` in README.md. 
+content.md is no longer used. 
 
 ### assets folder
 
