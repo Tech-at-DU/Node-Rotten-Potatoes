@@ -80,8 +80,10 @@ Each `h1` header creates a "Mark Complete" button for content between it and nex
 - Inline code references (file names, class names, function names, etc) can be made with `back-ticks`, code blocks are discussed below.
 
 ## Links
-
-[This](https://github.com/MakeSchool-Tutorials/Tutorial-Template) creates a link. Relative links should only be used when [linking to assets in the repository](assets/ms-logo.png).
+```
+[This](https://github.com/MakeSchool-Tutorials/Tutorial-Template) 
+``` 
+creates a link. Relative links should only be used when [linking to assets in the repository](assets/ms-logo.png).
 
 _Relative links to files in the same works on makeschool.com but the links will not do anything when clicked from ms-markdown-preview._
 
@@ -126,7 +128,7 @@ The following syntax will embed an MP4/MOV video with controls. Videos can be re
 
 ### PDF
 
-A PDF can not be embedded in markdown for viewing in-line. PDFs can be referenced with URLs or relative links if they are included in the repository, and a linked image of the pdf can be used, as indicated above for YouTube videos.
+A PDF can not be embedded in markdown for viewing in-line. PDFs can be referenced with URLs or relative links if they are included in the repository, or a linked image of the pdf can be used, as indicated above for YouTube videos.
 
 [This](assets/empty-slides.pdf)
 
