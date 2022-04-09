@@ -6,8 +6,6 @@ Finally, since we are creating comments, we should also be able to delete them.
 
 Remember that currently we do not have authentication so we'll just be letting any user create and delete comments. As we developed this project for a go live, we would probably add authentication and only allow people to delete their own comments!
 
-# Deleting Comments
-
 You need to define a route. Here is the list of the current routes with a new one added for the comment form at the bottom.
 
 | URL              | HTTP Verb | Action  |
