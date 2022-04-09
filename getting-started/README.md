@@ -128,7 +128,7 @@ The following syntax will embed an MP4/MOV video with controls. Videos can be re
 
 A PDF can not be embedded in markdown for viewing in-line. PDFs can be referenced with URLs or relative links if they are included in the repository, and a linked image of the pdf can be used, as indicated above for YouTube videos.
 
-![Alt text](assets/empty-slides.pdf)
+[This](assets/empty-slides.pdf)
 
 Images can also be included by full URL. This should be avoided in favor of images being stored in the tutorial repository.
 
