@@ -37,24 +37,9 @@ The folders should be named with the format `P[page-number]-Page-Slug` where:
 - `[page-number]` is a double digit number from `00` through `99` representing the page order
 - `Page-Slug` matches the slug defined in the tutorial page's `content.md`
 
-### content.md
+### content.md / README.md
 
-Each page's content is defined using `Markdown` in `content.md`. The top of `content.md` has the format:
-
-```
----
-title: "Page Title"
-slug: page-slug
----
-
-...
-```
-
-where:
-
-- `Page Title` becomes the first header and is used in the tutorial's table of contents
-- `page-slug` is a unique (to the tutorial) slug representing the page's title
-- `...` is the actual content of the tutorial page
+Each page's content is defined using `Markdown` in README.MD. content.md is no longer used. 
 
 ### assets folder
 
