@@ -119,11 +119,11 @@ And let's add some standard Express.js code to `app.js` to show a hello world.
 ```js
 const express = require('express')
 const app = express()
->
+
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
->
+
 app.listen(3000, () => {
   console.log('App listening on port 3000!')
 })
@@ -167,16 +167,16 @@ Now that we've installed the package, we must require it or **initialize** it in
 ```js
 // app.js
 var exphbs = require('express-handlebars');
->
+
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 ```
->
+
 > Now extend your **root route** ('/') to render `home.handlebars`.
->
+
 ```js
 // app.js
->
+
 app.get('/', (req, res) => {
   res.render('home', { msg: 'Handlebars are Cool!' });
 })
@@ -211,15 +211,15 @@ Now we'll add some boilerplate code to the `main.handlebars` layout template. Re
   <title>Rotten Potatoes</title>
 </head>
 <body>
->
+
   {{{body}}}
->
+
 </body>
 </html>
 ```
->
+
 > Update `views/home.handlebars` to the following so that it will render the message from our root route:
->
+
 ```html
 <!-- home.handlebars -->
 <h1>{{msg}}</h1>
