@@ -94,7 +94,6 @@ What error are we seeing in heroku now? What do we need to do?
 > You might need to add a "start" command to your `package.json` file:
 
 ```json
-// package.json
 
 "scripts": {
   "start": "node app.js"
