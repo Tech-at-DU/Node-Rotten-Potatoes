@@ -102,15 +102,14 @@ What error are we seeing in heroku now? What do we need to do?
 
 # Adding a Production Database
 
-It looks like the error is that we cannot connect to our mongodb database. That's because it is looking at the `'mongodb://localhost/rotten-potatoes'` URI, but that is on our local computer and heroku, which is remote, doesn't have access to that. So we have to add a mongodb heroku add-on called [mLabs](https://mlab.com/).
+It looks like the error is that we cannot connect to our mongodb database. That's because it is looking at the `'mongodb://localhost/rotten-potatoes'` URI, but that is on our local computer and heroku, which is remote, doesn't have access to that. So we have to add a mongodb heroku add-on; until recently we used an add-on called [mLabs], but that has been replaced by MongoDB ATLAS. It's a little bit more involved than mlabs.
 
-> Add `mLabs`:
+Here are some good clear directions how to set up your Atlas Cluster in 5 steps, followed by a short tutorial showing how to connect your Atlas cluster to your Heroku app. The tutorial has you clone some code, so I encourage you to open a seperate code editor and follow the instructions using the code provided. Then come back to your rotten-potatoes project and repeat the instructions.
 
-```bash
-$ heroku addons:create mongolab:sandbox
-```
+> https://www.mongodb.com/developer/products/atlas/use-atlas-on-heroku/#prerequisites
 
-Then we have to point to this production mongodb database URI in our `app.js` file.
+
+Our next step is to point to this production mongodb database URI in our `app.js` file.
 
 > Update `app.js` to point to the mongodb URI if it exists:
 
