@@ -2,7 +2,38 @@
 # Push to Production with Heroku
 ---
 
-Time to ship some code! Since we've built and styled our Rotten Potatoes app, let's show it to the world by putting it online. We'll use a service called [Heroku](https://www.heroku.com) that is free, but it does require a **credit card** to be on file.
+Time to ship some code! Since we've built and styled our Rotten Potatoes app, let's show it to the world by putting it online. 
+
+# Render
+
+So Heroku started to charge (read instructions below) so we are going to use a service called Render and MongoDB Atlas to go live.
+
+## MongoDB Atlas
+
+1. Go to [MonogoDB Atlas](https://www.mongodb.com/) and create an account if you haven't already
+2. Create a new free-tier cluster
+3. Create a user and keep the user's password for later.
+4. Create a new database. Click on "connect" and then "drivers" and copy the connection string.
+5. Replace `<password>` in the connection string with the database's user's password.
+
+## Render steps
+
+1. Go to [render.com](https://www.render.com) and create an account if you haven't already.
+2. Create a new web service named the same as your project.
+3. Set an environment variable called `MONGODB_URI` and set it equal to the connection string you got from your MongoDB Atlas database.
+4. Now in your `app.js` make sure your `mongoose.connect(process.env.MONGODB_URI || <localhost mongodb path>)` command looks like this.
+5. Be sure to wrap your `require("dotenv").config()` in `app.js` in a conditional block so it only is called in development. Like this:
+
+```js
+if (!process.env.PORT) {
+  require("dotenv").config()
+}
+```
+6. Now push your code to render and check that the app loaded properly and connected to the production MongoDB Atlas database.
+
+# Heroku
+
+We'll use a service called [Heroku](https://www.heroku.com) that is free, but it does require a **credit card** to be on file.
 
 # Sign Up For and Install Heroku
 
